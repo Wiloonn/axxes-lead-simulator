@@ -1,0 +1,18 @@
+# --- Tolinnederland: config simple avec NL à la racine ---
+RewriteEngine On
+
+# 1) Forcer le HTTPS
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 2) Servir index.html par défaut
+DirectoryIndex index.html
+
+# 3) Normaliser les URL des dossiers langue
+#    /fr  -> /fr/
+#    /en  -> /en/
+#    /de  -> /de/
+RewriteRule ^(fr|en|de)$ $1/ [L,R=301]
+
+# 4) Si quelqu’un tape /nl/ on renvoie vers la racine (NL = page d’accueil)
+RewriteRule ^nl/?$ / [L,R=301]

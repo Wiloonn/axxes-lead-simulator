@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVSZQSLF');
+</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Alles over de vrachtwagenheffing in Nederland - Heavy Goods Vehicle Charge</title>
+  <meta name="description" content="Alles over de HGVC-tol in Nederland: de tarieven, de lanceringsdatum, de betrokken vrachtwagens en het einde van de Eurovignet.">
+<meta name="keywords" content="tol, HGVC, Nederland, vrachtwagens, Eurovignet, belasting, juli 2026, trucks, tolsimulator">
+
+  <link href="assets/img/axxes/favicon/favicon.png" type="image/png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://tolinnederland.com/" />
+
+  <!-- Multilingue (hreflang) -->
+  <link rel="alternate" hreflang="nl" href="https://tolinnederland.com/" />
+  <link rel="alternate" hreflang="fr" href="https://tolinnederland.com/fr/" />
+  <link rel="alternate" hreflang="en" href="https://tolinnederland.com/en/" />
+  <link rel="alternate" hreflang="de" href="https://tolinnederland.com/de/" />
+  <link rel="alternate" hreflang="x-default" href="https://tolinnederland.com/" />
+
+  <!-- Indexation -->
+  <meta name="robots" content="index, follow" />
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.10.0/tarteaucitron.js"></script>
+  <script type="text/javascript">
+tarteaucitron.init({
+  privacyUrl: "confidentialite.html", /* lien vers ta politique de confidentialité */
+  hashtag: "#tarteaucitron", /* identifiant pour ouvrir le panneau */
+  cookieName: "tarteaucitron", 
+  orientation: "bottom", /* top / middle / bottom */
+  showAlertSmall: false,   // supprime la tarte jaune
+  cookieslist: false,      // supprime le bouton "Gestion des services"
+  adblocker: false, 
+  acceptAllCta: true, /* bouton “Tout accepter” */
+  highPrivacy: true, /* pas de consentement auto */
+  handleBrowserDNTRequest: false,
+  removeCredit: true,
+  moreInfoLink: true,
+  useExternalCss: false,
+  mandatory: true /* affiche info “cookies nécessaires” */
+});
+
+tarteaucitron.services.googleanalytics = {
+    "key": "googleanalytics",
+    "type": "analytic",
+    "name": "Google Analytics",
+    "needConsent": true,
+    "cookies": ['_ga', '_gid', '_gat'],
+    "js": function () {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZN53QL85XT'); // ⚠️ Remplace par ton ID GA4
+    },
+    "fallback": function () {
+      console.log("Google Analytics bloqué par TarteAuCitron");
+    }
+  };
+  (tarteaucitron.job = tarteaucitron.job || []).push('googleanalytics');
+
+(function () {
+  const paths = { nl: "/", fr: "/fr/", en: "/en/", de: "/de/" };
+
+  // cookies helpers
+  const setCookie = (k,v,days=180)=>{
+    document.cookie = `${k}=${v};path=/;max-age=${days*24*60*60};SameSite=Lax`;
+  };
+  const getCookie = (k)=>{
+    const m = document.cookie.match(new RegExp('(?:^|; )'+k+'=([^;]*)'));
+    return m ? decodeURIComponent(m[1]) : '';
+  };
+
+  // ne fait rien si on n'est pas sur la racine
+  if (location.pathname !== "/") return;
+
+  // si l'utilisateur a déjà un choix, on respecte (pas de redirection)
+  const pref = (getCookie("lang_pref")||"").toLowerCase();
+  if (paths[pref]) return;
+
+  // première visite : détection navigateur
+  const short = (navigator.language||navigator.userLanguage||"nl").slice(0,2).toLowerCase();
+  if (paths[short] && short !== "nl") {
+    setCookie("lang_pref", short);     // on se souvient du choix auto
+    location.replace(paths[short]);    // on redirige une seule fois
+  }
+})();
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZN53QL85XT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZN53QL85XT');
+</script>
+</head>
+
+<body class="index-page">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVSZQSLF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+  <div style="
+    background-color: aliceblue;
+    text-align: center;
+" class="">Deze website is niet de officiële overheidswebsite over de vrachtwagenheffing; hij is eigendom van Axxès, de Europese tollexpert sinds meer dan 20 jaar.<br>Bezoek de <a target="_blank" href="https://www.vrachtwagenheffing.nl/">officiële website</a> van de overheid voor de meest nauwkeurige en recente informatie over de regeling.</div>
+  
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <img style="width: 10vh; margin: 0 0 0 30px;" src="/assets/img/axxes/logo_axxes.png" alt="Logo de l'entreprise fraiçaise Axxès">
+    <div class="container position-relative d-flex align-items-center"><a href="/" class="logo d-flex align-items-center me-auto">
+      <h1 class="sitename">Alles over <span style="color: #F36B1C;">tol</span> in <span style="color: #F36B1C;">Nederland</span>.</h1></a> <!-- Sélecteur de langue --><div class="dropdown ms-auto" id="lang-switcher">
+        <button class="btn btn-light dropdown-toggle" type="button" id="langMenu" data-bs-toggle="dropdown" aria-expanded="false"><img src="assets/img/axxes/flag/nl.png" alt="Nederlandse vlag in het taalkeuzemenu" style="width: 40%;">NL</button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langMenu">
+          <li><a class="dropdown-item" data-lang="fr" href="/fr/"><img src="assets/img/axxes/flag/fr.png" alt="Franse vlag in het taalkeuzemenu">Français</a></li>
+          <li><a class="dropdown-item" data-lang="en" href="/en/"><img src="assets/img/axxes/flag/en.png" alt="Britse vlag in het taalkeuzemenu">English</a></li>
+          <li><a class="dropdown-item" data-lang="de" href="/de/"><img src="assets/img/axxes/flag/de.png" alt="Duitse vlag in het taalkeuzemenu">Deutsch</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main"><!-- Hero --><section class="hero-taxenl">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div data-aos="zoom-out" data-aos-delay="200" class="hero-copy">
+            <h2>Alles over <strong>tol</strong> in <strong>Nederland</strong> en <strong>vrachtwagenheffing</strong></h2>
+            <div class="hero-ctas" style="display:flex;gap:20px;margin-top:30px;"><a href="#taxe-nl" class="btn-primary">Bekijk de FAQ</a> <a id="cta-simu" href="#simu" class="btn-primary">Kostensimulator</a></div>
+          </div><a id="maphero" href="#simu"><div data-aos="fade-up" data-aos-delay="100" class="hero-visual">
+              <div class="truck-bg" role="img" aria-label="Camion équipé d'un boîtier GNSS"></div><img src="assets/img/axxes/cmoov.png" alt="GNSS tolkastje" class="obu"></div></a></div>
+      </div>
+    </section><!-- FAQ --><section id="taxe-nl" class="taxe-nl">
+
+      <div class="container">
+
+      <div class="tnl-container">
+
+        <h2>De Nederlandse kilometerheffing voor vrachtwagens <br>treedt in werking op <strong>1 juli 2026</strong>.</h2>
+        <p>Alles wat u moet weten om uw vloot voor te bereiden, in 10 vragen.</p>
+
+        <details class="tnl-item" open>
+          <summary>1. De vrachtwagenheffing in Nederland: wat houdt het precies in?</summary>
+          <div class="tnl-body">
+             <p>De <strong>vrachtwagenheffing</strong> (Heavy Goods Vehicle Charge) is een <strong>kilometerheffing</strong> die Nederland invoert voor <strong>vrachtwagens in het goederenvervoer</strong>.</p>
+            <p>Deze heffing <strong>vervangt het Eurovignet</strong> in Nederland per <strong>1<sup></sup> juli 2026</strong> en volgt uit de invoering van de EETS-richtlijn (European Electronic Toll Service).</p>
+          </div>
+        </details>
+
+        <details class="tnl-item">
+          <summary>2. Voor welke wegen geldt de heffing?</summary>
+          <div class="tnl-body">
+             <p>De heffing geldt voor <strong>autowegen</strong>, <strong>rijkswegen</strong> en <strong>bepaalde lokale wegen</strong> rond de grote Nederlandse steden.</p>
+            <p><a href="assets/pdf/Road map Truck Toll.pdf" class="tnl-link">Download de gedetailleerde wegenlijst (binnenkort beschikbaar)</a></p>
+            <p><img src="assets/img/axxes/map_route.jpg" width="100%" alt="Kaart van de betreffende wegen"></p>
+          </div>
+        </details>
+
+        <details class="tnl-item">
+          <summary>3. Voor wie geldt deze heffing?</summary>
+          <div class="tnl-body">
+            <p><strong>Vrachtwagens in de categorie&euml;n N2 en N3</strong> voor goederenvervoer, oftewel <strong>alle voertuigen zwaarder dan 3,5 ton (Toegestane Maximum Massa)</strong>, geregistreerd in Nederland of daarbuiten. <strong>Bussen </strong>vallen niet onder de heffing.</p>
+          </div>
+        </details>
+
+        <details class="tnl-item">
+          <summary>4. Zijn er vrijgestelde voertuigen?</summary>
+          <div class="tnl-body">
+            <p>Ja, bepaalde categorie&euml;n kunnen worden <strong>vrijgesteld</strong>, met name:</p>
+            <ul>
+              <li><strong>Politie</strong>- en <strong>brandweer</strong>voertuigen;</li>
+              <li>Voertuigen van <strong>40 jaar en ouder</strong>, zwaarder dan 3,5 ton, die uitsluitend voor priv&eacute;doeleinden of door non-profitorganisaties worden gebruikt.</li>
+            </ul>
+            <p><a class="tnl-link" href="https://www.vrachtwagenheffing.nl/en/dispensation-and-exemption" target="_blank" rel="noopener">Klik hier om een vrijstelling aan te vragen.</a></p>
+          </div>
+        </details>
+
+        <details class="tnl-item">
+          <summary>5. Wanneer wordt de heffing van kracht?</summary>
+          <div class="tnl-body">
+            <p>De invoering is gepland voor <strong>1<sup></sup> juli 2026</strong>.</p>
+          </div>
+        </details>
+
+        <details class="tnl-item">
+          <summary>6. Waarom is deze heffing ingevoerd?</summary>
+          <div class="tnl-body">
+            <ul class="tnl-bullets">
+              <li><strong>Financieren</strong> van onderhoud en ontwikkeling van infrastructuur: een eerlijkere bijdrage van de weggebruikers die de meeste slijtage veroorzaken.</li>
+          <li><strong>Verminderen van de milieubelasting</strong>: stimuleren van het gebruik van schonere en effici&euml;ntere voertuigen.</li>
+          <li><strong>Beter verkeersbeheer</strong> en stimuleren van de <strong>modal shift</strong> zoals spoorvervoer, een duurzamere oplossing.</li>
+          <li><strong>Harmoniseren</strong> met de praktijk in andere Europese landen zoals Belgi&euml;, Duitsland of Zwitserland.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="tnl-item">
+          <summary>7. Hoe wordt de heffing berekend?</summary>
+          <div class="tnl-body">Het toltarief is gebaseerd op de volgende elementen: <br><br><ul class="tnl-bullets">
+          <li>De <strong>afstand</strong> die op het belaste wegennet wordt afgelegd (gedetecteerd via <strong>GNSS</strong> &ndash; GPS/Galileo);</li>
+          <li>Het <strong>type weg</strong> dat wordt gebruikt;</li>
+          <li>Het <strong>gewicht</strong> van het voertuig;</li>
+          <li>De <strong>emissieklasse</strong> (Euro/CO²);</li>
+        </ul><br> Kortom: hoe zwaarder en vervuilender het voertuig, hoe hoger het kilometertarief.</div>
+        </details>
+
+        <details class="tnl-item">
+          <summary>8. Hoe moet de heffing worden betaald?</summary>
+          <div class="tnl-body">
+          <p>Elk voertuig moet zijn uitgerust met een <strong>kastje of tolkastje (OBU)</strong> met <strong>GNSS/GPS</strong>-technologie. Het systeem registreert de afgelegde ritten en <strong>genereert automatisch de facturatie</strong>.</p>
+          </div>
+        </details>
+
+        <details class="tnl-item">
+          <summary>9. Waar kan ik een tolkastje (OBU) verkrijgen?</summary>
+          <div class="tnl-body">
+        <p>U heeft <strong>twee opties</strong>:</p>
+        <ol>
+          <li><a class="tnl-link" href="https://www.nedlinq.nl/" target="_blank" rel="noopener"><strong>NedLinq</strong></a>, de aanbieder van het nationale kastje: <br> Dienst <strong>uitsluitend geldig in Nederland</strong>, <strong>borg vereist</strong> voor <strong>elk besteld kastje</strong>, geen extra diensten.</li>
+          <li>Een <a class="tnl-link" href="#" target="_blank" rel="noopener"><strong>EETS-provider</strong></a>: <strong>&eacute;&eacute;n kastje</strong> om vrij te rijden in <strong>&eacute;&eacute;n</strong> of <strong>meerdere landen</strong> met <strong>&eacute;&eacute;n factuur</strong>. <br>Vaak voorkomende aanvullende diensten: <em>geolocatie van uw vrachtwagens</em>, <em>downloaden op afstand van sociale gegevens</em>, <em>tools voor vlootbeheer</em>, ... <br><strong>Axx&egrave;s</strong>, een EETS-provider, biedt <strong>hetzelfde kastje</strong> als de nationale Nederlandse aanbieder, maar met dit kastje kan men <strong>in heel Europa</strong> rijden.</li>
+        </ol>
+        <p class="tnl-note" style="font-size:14px"><strong>Let op</strong>: Net als <em>NedLinq</em> zijn <em>Satellic</em> (Belgi&euml;) en <em>Toll Collect</em> (Duitsland) <strong>lokale aanbieders</strong> van kastjes voor het rijden in <strong>&eacute;&eacute;n enkel land</strong>. De tolkastjes van <em>Satellic</em> en <em>Toll Collect</em> <strong>zijn niet bruikbaar in Nederland</strong>.</p>
+      </div>
+        </details>
+
+        <details class="tnl-item">
+          <summary>10. Wat zijn de risico&apos;s bij niet-naleving?</summary>
+          <div class="tnl-body">
+        <p>De overheid legt boetes op voor overtredingen van de tolheffing:</p>
+        <table class="table10">
+          <thead>
+            <tr>
+              <th>Inbreuken</th>
+              <th>Boete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>De boordapparatuur van een vrachtwagen functioneert niet goed tijdens het rijden op de weg.</td>
+              <td>500,00 €</td>
+            </tr>
+            <tr>
+              <td>De boordapparatuur van een vrachtwagen wordt niet ingeschakeld tijdens het rijden op de weg.</td>
+              <td>500,00 €</td>
+            </tr>
+            <tr>
+              <td>Tijdens het rijden op de weg lijkt de boordapparatuur van een vrachtwagen niet te behoren tot de vrachtwagen waarvoor een geldig servicecontract is afgesloten.</td>
+              <td>500,00 €</td>
+            </tr>
+            <tr>
+              <td>De eigenaar van een vrachtwagen die op de weg rijdt, heeft geen geldig onderhoudscontract voor die vrachtwagen en heeft geen vrijstelling of ontheffing verkregen zoals bedoeld in artikel 3, eerste of tweede lid, van de wet.</td>
+              <td>800,00 €</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Deze boetes worden met 50% verminderd gedurende de eerste 6 maanden na de invoering van de belasting op 1 juli 2026.
+Bij meerdere overtredingen krijgt de eigenaar van deze vrachtwagen alleen een boete voor de overtreding waarvoor de hoogste boete geldt.</p>
+      </div>
+        </details>
+
+      </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION NIEUWSBRIEF ================= -->
+<section id="newsletter">
+  <div class="container-news reveal-left">
+    <div class="titlenews">
+      <h4>Blijf op de hoogte van de laatste updates over de kilometerheffing.</h4>
+    </div>
+
+    <form id="newsletter-form" action="/forms/newsletter.php" method="POST" style="text-align:center;">
+      <div class="containernewsform">
+        
+        <div>
+          <label for="societenews">Bedrijf :</label>
+          <input type="text" name="societenews" id="societenews" placeholder="Naam van uw bedrijf" required>
+        </div>
+
+        <div>
+          <label for="mailnews">E-mail :</label>
+          <input type="email" name="mailnews" id="mailnews" placeholder="Uw e-mailadres" required>
+        </div>
+
+        <!-- Honeypot anti-bots (onzichtbaar voor mensen) -->
+        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute; left:-9999px; opacity:0;">
+
+        <!-- Taal van de pagina -->
+        <input type="hidden" name="lang" value="nl">
+
+        <button type="submit" class="btn2">Inschrijven</button>
+      </div>
+
+      <label style="margin-top:10px; display:block;">
+        <input type="checkbox" required>
+        Ik accepteer de <a href="/cgu.html">gebruiksvoorwaarden</a> en het <a href="/confidentialite.html">privacybeleid</a>.
+      </label>
+
+      <div id="news-feedback" class="notice" hidden></div>
+    </form>
+  </div>
+</section>
+
+<!-- =================== SECTIE SIMULATOR =================== -->
+<section id="simu">
+  <div id="tnl-container-simu-wrapper" class="tnl-container-simu">
+    <h2 style="text-align:center;margin-bottom:20px;">
+      Bereken in enkele klikken de kostprijs van uw trajecten op de tolwegen.
+    </h2>
+    <p><i>*Beschikbaarheid van de tolsimulatie in Nederland Q1 2026</i></p>
+
+    <!-- Hoofdcontainer (iframe + overlay) -->
+    <div id="bmap-wrapper" class="bmap-wrapper">
+
+      <!-- IFRAME van de simulator -->
+      <iframe class="cache"
+        id="bmap-iframe"
+        title="BMAP Simulator"
+        src="https://atlas.be-mobile.biz/?config=69298a654da22e4b1526d256&language.language=nl_BE&dimensions={%22NL%22:{%22CO2CLASS%22:%221%22,%22EUR%22:%225%22,%22GTW%22:%22[3500,11990]%22}}&@=map_51.927196,4.81808,7.4503"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allow="fullscreen"
+      ></iframe>
+      <button onclick="togglefull()" class="cache btn-plein" id="pleinecran"><i class="bi bi-arrows-fullscreen"></i></button>
+
+      <!-- OVERLAY die de toegang vergrendelt -->
+      <div id="bmap-overlay" class="bmap-overlay" role="button" aria-label="Simulator ontgrendelen">
+
+        <!-- Voorbeeldafbeelding van de simulator -->
+        <img class="overlay-shot" src="../assets/img/axxes/screen_bmap_nl.jpg" alt="Voorbeeld van de BMAP-simulator">
+
+        <!-- Donkere sluier -->
+        <div class="overlay-scrim" aria-hidden="true"></div>
+
+        <!-- Slot in het midden -->
+        <div class="bmap-lock" aria-hidden="true">
+          <svg class="lock-svg" viewBox="0 0 120 120">
+            <!-- halo -->
+            <circle class="halo" cx="60" cy="60" r="50" fill="rgba(0,0,0,.40)"/>
+            <!-- beugel -->
+            <path class="shackle"
+                  d="M45 52 V40 a15 15 0 0 1 30 0 v12"
+                  fill="none" stroke="#ffb84d" stroke-width="10" stroke-linecap="round"/>
+            <!-- lichaam -->
+            <rect class="body" x="38" y="50" rx="8" width="44" height="44" fill="#ff8b23"/>
+            <!-- sleutelgat -->
+            <g class="keyhole">
+              <circle cx="60" cy="70" r="6" fill="#1e1e1e"/>
+              <rect x="57" y="74" width="6" height="10" rx="3" fill="#1e1e1e"/>
+            </g>
+            <!-- vonken -->
+            <path class="spark" d="M86 46 l6 -6 M86 52 h10 M84 58 l6 6"
+                  stroke="#ffd27a" stroke-width="3" stroke-linecap="round" opacity="0"/>
+          </svg>
+          <span class="lock-hint">Klik om te ontgrendelen</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Popup -->
+ 
+<div id="popup" class="popup">
+      <div class="popup-content"><span class="close">&times;</span><h3>Toegang tot onze simulator</h3>
+        <p>Vul uw gegevens in om toegang te krijgen tot de tolcalculator.</p>
+
+        <form id="popup-form" action="forms/contact.php" method="POST" novalidate><!-- honeypot anti-spam --><input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;">
+  <input type="hidden" name="lang" value="nl">
+
+  <div class="form-group">
+    <label for="nom"><span style="color: #F36B1C;">* </span>Naam en voornaam:</label>
+    <input type="text" id="nom" name="nom" placeholder="Uw voor- & achternaam" required>
+  </div>
+
+  <div class="form-group">
+    <label for="entreprise"><span style="color: #F36B1C;">* </span>Bedrijf:</label>
+    <input type="text" id="entreprise" name="entreprise" placeholder="Naam van uw bedrijf" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email"><span style="color: #F36B1C;">* </span>Zakelijk e-mailadres:</label>
+    <input type="email" id="email" name="email" placeholder="voorbeeld@bedrijf.com" required>
+  </div>
+
+  <div class="form-group">
+    <label for="tel">Telefoon:</label>
+    <input type="tel" id="tel" name="tel" placeholder="0881234567">
+  </div><!-- 2 selects sur une seule ligne --><div class="form-inline">
+    <div class="form-group">
+      <label for="taille"><span style="color: #F36B1C;">* </span>Aantal vrachtwagens:</label>
+      <input type="number" id="taille" name="taille">
+    </div>
+
+    <div class="form-group">
+      <label for="tolldomains"><span style="color: #F36B1C;">* </span>Ik rijd:</label>
+      <select id="tolldomains" name="tolldomains" required>
+        <option value=""></option>
+        <option value="NL">Uitsluitend in Nederland</option>
+        <option value="NL-BE-DE">In Nederland / Belgi&euml; / Duitsland</option>
+        <option value="EU">In Europa</option>
+      </select>
+    </div>
+  </div><!-- consentements DISTINCTS --><div class="form-check mt-2">
+    <input class="form-check-input" type="checkbox" id="consent_marketing" name="consent_marketing" required>
+    <label class="form-check-label" for="consent_marketing">Ik ga ermee akkoord een persoonlijke offerte te ontvangen om de vrachtwagenheffing in Nederland te betalen en voorbereid te zijn op de invoering van de heffing.<span style="color: #F36B1C;">&nbsp;*</span></label>
+  </div>
+
+  <div class="form-check mt-2">
+    <input class="form-check-input" type="checkbox" id="consent_policy" name="consent_policy" required>
+    <label class="form-check-label" for="consent_policy">Ik ga akkoord met de <a href="cgu.html" target="_blank">Algemene Gebruiksvoorwaarden</a> en het <a href="/confidentialite.html" target="_blank" rel="noopener">Privacybeleid</a>.<span style="color: #F36B1C;">&nbsp;*</span></label>
+  </div>
+
+  <input type="hidden" name="source" value="BMAP popup (FR)">
+  <button id="formtollin" type="submit" class="btn">Bereken mijn kosten</button>
+</form>
+
+      </div>
+    </div>
+
+    <button onclick="tarteaucitron.userInterface.openPanel()" class="cookie-btn">🍪</button>
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top text-center">
+      <div class="footer-privacy"><a href="cgu.html">Wettelijke vermeldingen en Algemene Gebruiksvoorwaarden</a> <a href="confidentialite.html">Privacybeleid</a></div><a href="index.html" class="logo"><span class="sitename">Alles over de vrachtwagenheffing in Nederland</span></a></div>
+  </footer><a id="cta-sticky" href="#">Bereken mijn kosten</a><script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    (function(){
+      const cta = document.getElementById('cta-sticky');
+      const popup = document.getElementById('popup');
+      if (cta && popup) {
+        cta.addEventListener('click', function(e){
+          e.preventDefault();
+          document.getElementById('simu')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          setTimeout(()=> popup.style.display = 'block', 600);
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Interdire les dossiers privés s'il y en a (optionnel)
+Disallow: /forms/
+Disallow: /tmp/
+Disallow: /assets/dev/
+
+# Indique le sitemap principal
+Sitemap: https://tolinnederland.com/sitemap.xml
